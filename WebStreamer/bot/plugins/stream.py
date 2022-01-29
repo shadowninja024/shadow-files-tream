@@ -85,7 +85,7 @@ async def private_receive_handler(c: Client, m: Message):
             text=msg_text.format(stream_link),
             parse_mode="HTML", 
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ 📥", url=stream_link)]]),
+            
             quote=True
         )
     except FloodWait as e:
